@@ -10,7 +10,8 @@
     "resolveJsonModule": true /* Allow importing JSON modules */,
     "baseUrl": "./src" /* Base directory to resolve non-relative module names */,
     "paths": {
-      "*": ["*", "src/*"] /* Mapping paths for module resolution */
+      "@/components": ["./components"],
+      "@/theme": ["./theme"]
     },
     "strictNullChecks": true /* Enable strict null checks */,
     "noImplicitAny": true /* Disallow implicit 'any' types */,
