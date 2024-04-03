@@ -4,6 +4,8 @@ import { ChakraProvider } from "@chakra-ui/react";
 import React from "react";
 
 export default function App() {
+  console.log(true);
+  
   return (
     <ChakraProvider theme={theme}>
       <div>
