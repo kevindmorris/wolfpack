@@ -5,14 +5,14 @@ module.exports = {
   entry: "./src/index.tsx",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "main.js",
+    filename: "main.js"
   },
   resolve: {
     extensions: [".tsx", ".ts", ".js", ".jsx"],
     alias: {
       "@/components": path.resolve(__dirname, "src/components"),
-      "@/theme": path.resolve(__dirname, "src/theme"),
-    },
+      "@/theme": path.resolve(__dirname, "src/theme")
+    }
   },
   module: {
     rules: [
@@ -25,24 +25,24 @@ module.exports = {
             presets: [
               "@babel/preset-env",
               "@babel/preset-react",
-              "@babel/preset-typescript",
-            ],
-          },
-        },
+              "@babel/preset-typescript"
+            ]
+          }
+        }
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
-        use: ["file-loader"],
-      },
-    ],
+        use: ["file-loader"]
+      }
+    ]
   },
   devServer: {
     static: {
-      directory: path.join(__dirname, "public"),
+      directory: path.join(__dirname, "public")
     },
     compress: true,
     port: 3000,
-    open: true,
+    open: true
   },
 
   plugins: [
@@ -51,9 +51,9 @@ module.exports = {
       filename: "index.html",
       meta: {
         viewport: "width=device-width, initial-scale=1, shrink-to-fit=no",
-        "theme-color": "#000",
+        "theme-color": "#000"
       },
-      title: "Wolfpack",
-    }),
-  ],
+      title: "Wolfpack"
+    })
+  ]
 };

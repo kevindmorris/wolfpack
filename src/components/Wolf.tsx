@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export default function Wolf() {
-  return (
-    <div>Wolf</div>
-  )
+  return <div>Wolf</div>;
 }
